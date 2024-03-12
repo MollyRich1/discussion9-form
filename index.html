@@ -8,12 +8,17 @@
     <!-- Add fonts from Adobe fonts or Google Fonts -->
     <title>Submit Recommendations</title>
     <!-- Add a favicon -->
+    <link rel="icon" type="image/favicon" href="/images/Lion_favicon.png">
 </head>
 <body>
   <!-- Implement a skip to main! -->
-    <!-- <form action="" method="post"> Connect to formspree.io-->
-        <label for="name">Name:</label>
+  <a class = "hide_this" href = "#main">Skip to Main Content</a>
+
+    <form action="https://formspree.io/f/xwkgqazp" method="post"> Connect to formspree.io
+        <div class = "the_name">
+      <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
+      </div>
 <div class="radio">
         <label>Area of Submission:</label><br>
         <!-- How can the label and button line up and be easily navigatable? -->
@@ -33,8 +38,9 @@
         <input type="file" id="image" name="image"><br><br>
 
         <input type="submit" value="Submit">
-
+        <div class="reset">
         <button type="reset">Reset</button>
+        </div>
       </form>
 </body>
 </html>
